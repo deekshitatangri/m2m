@@ -5,10 +5,109 @@
 	m2m
 </title><script type="text/javascript">
 	var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,initializeOnLoaded:function(o){gform.domLoaded&&gform.scriptsLoaded?o():!gform.domLoaded&&gform.scriptsLoaded?window.addEventListener("DOMContentLoaded",o):document.addEventListener("gform_main_scripts_loaded",o)},hooks:{action:{},filter:{}},addAction:function(o,n,r,t){gform.addHook("action",o,n,r,t)},addFilter:function(o,n,r,t){gform.addHook("filter",o,n,r,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,n){gform.removeHook("action",o,n)},removeFilter:function(o,n,r){gform.removeHook("filter",o,n,r)},addHook:function(o,n,r,t,i){null==gform.hooks[o][n]&&(gform.hooks[o][n]=[]);var e=gform.hooks[o][n];null==i&&(i=n+"_"+e.length),gform.hooks[o][n].push({tag:i,callable:r,priority:t=null==t?10:t})},doHook:function(n,o,r){var t;if(r=Array.prototype.slice.call(r,1),null!=gform.hooks[n][o]&&((o=gform.hooks[n][o]).sort(function(o,n){return o.priority-n.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==n?t.apply(null,r):r[0]=t.apply(null,r)})),"filter"==n)return r[0]},removeHook:function(o,n,t,i){var r;null!=gform.hooks[o][n]&&(r=(r=gform.hooks[o][n]).filter(function(o,n,r){return!!(null!=i&&i!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][n]=r)}});
-
+	<script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss="";
+						if(htmlDiv) {
+							htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+						}else{
+							var htmlDiv = document.createElement("div");
+							htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+							document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+						}
+					</script>
+<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
+<script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss="";
+				if(htmlDiv) {
+					htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+				}else{
+					var htmlDiv = document.createElement("div");
+					htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+					document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+				}
+			</script>
+		<script type="text/javascript">
+if (setREVStartSize!==undefined) setREVStartSize(
+	{c: '#rev_slider_1_1', responsiveLevels: [1240,1024,778,480], gridwidth: [1080,1080,778,480], gridheight: [600,600,600,800], sliderLayout: 'auto'});
+			
+var revapi1,
+	tpj;	
+(function() {			
+	if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded",onLoad); else onLoad();	
+	function onLoad() {				
+		if (tpj===undefined) { tpj = jQuery; if("off" == "on") tpj.noConflict();}
+	if(tpj("#rev_slider_1_1").revolution == undefined){
+		revslider_showDoubleJqueryError("#rev_slider_1_1");
+	}else{
+		revapi1 = tpj("#rev_slider_1_1").show().revolution({
+			sliderType:"standard",
+			jsFileLocation:"//m2m.org/wp-content/plugins/revslider/public/assets/js/",
+			sliderLayout:"auto",
+			dottedOverlay:"none",
+			delay:9000,
+			navigation: {
+				keyboardNavigation:"off",
+				keyboard_direction: "horizontal",
+				mouseScrollNavigation:"off",
+ 							mouseScrollReverse:"default",
+				onHoverStop:"off",
+				bullets: {
+					enable:true,
+					hide_onmobile:false,
+					style:"hesperiden",
+					hide_onleave:false,
+					direction:"horizontal",
+									container:"layergrid",
+					h_align:"center",
+					v_align:"bottom",
+					h_offset:0,
+					v_offset:25,
+					space:5,
+					tmp:''
+				}
+			},
+			responsiveLevels:[1240,1024,778,480],
+			visibilityLevels:[1240,1024,778,480],
+			gridwidth:[1080,1080,778,480],
+			gridheight:[600,600,600,800],
+			lazyType:"none",
+			shadow:0,
+			spinner:"spinner0",
+			stopLoop:"off",
+			stopAfterLoops:-1,
+			stopAtSlide:-1,
+			shuffle:"off",
+			autoHeight:"off",
+			disableProgressBar:"on",
+			hideThumbsOnMobile:"off",
+			hideSliderAtLimit:0,
+			hideCaptionAtLimit:0,
+			hideAllCaptionAtLilmit:0,
+			debugMode:false,
+			fallbacks: {
+				simplifyAll:"off",
+				nextSlideOnWindowFocus:"off",
+				disableFocusListener:false,
+			}
+		});
+	}; /* END OF revapi call */
+	
+ }; /* END OF ON LOAD FUNCTION */
+}()); /* END OF WRAPPING FUNCTION */
 </script>
-
-
+		<script>
+					var htmlDivCss = unescape(".hesperiden.tp-bullets%20%7B%0A%7D%0A.hesperiden.tp-bullets%3Abefore%20%7B%0A%09content%3A%22%20%22%3B%0A%09position%3Aabsolute%3B%0A%09width%3A100%25%3B%0A%09height%3A100%25%3B%0A%09background%3Atransparent%3B%0A%09padding%3A10px%3B%0A%09margin-left%3A-10px%3Bmargin-top%3A-10px%3B%0A%09box-sizing%3Acontent-box%3B%0A%20%20%20border-radius%3A8px%3B%0A%20%20%0A%7D%0A.hesperiden%20.tp-bullet%20%7B%0A%09width%3A12px%3B%0A%09height%3A12px%3B%0A%09position%3Aabsolute%3B%0A%09background%3A%20rgb%28153%2C%20153%2C%20153%29%3B%20%2F%2A%20old%20browsers%20%2A%2F%0A%20%20%20%20background%3A%20-moz-linear-gradient%28top%2C%20%20rgb%28153%2C%20153%2C%20153%29%200%25%2C%20rgb%28225%2C%20225%2C%20225%29%20100%25%29%3B%20%2F%2A%20ff3.6%2B%20%2A%2F%0A%20%20%20%20background%3A%20-webkit-linear-gradient%28top%2C%20%20rgb%28153%2C%20153%2C%20153%29%200%25%2Crgb%28225%2C%20225%2C%20225%29%20100%25%29%3B%20%2F%2A%20chrome10%2B%2Csafari5.1%2B%20%2A%2F%0A%20%20%20%20background%3A%20-o-linear-gradient%28top%2C%20%20rgb%28153%2C%20153%2C%20153%29%200%25%2Crgb%28225%2C%20225%2C%20225%29%20100%25%29%3B%20%2F%2A%20opera%2011.10%2B%20%2A%2F%0A%20%20%20%20background%3A%20-ms-linear-gradient%28top%2C%20%20rgb%28153%2C%20153%2C%20153%29%200%25%2Crgb%28225%2C%20225%2C%20225%29%20100%25%29%3B%20%2F%2A%20ie10%2B%20%2A%2F%0A%20%20%20%20background%3A%20linear-gradient%28to%20bottom%2C%20%20rgb%28153%2C%20153%2C%20153%29%200%25%2Crgb%28225%2C%20225%2C%20225%29%20100%25%29%3B%20%2F%2A%20w3c%20%2A%2F%0A%20%20%20%20filter%3A%20progid%3Adximagetransform.microsoft.gradient%28%20%0A%20%20%20%20startcolorstr%3D%22rgb%28153%2C%20153%2C%20153%29%22%2C%20endcolorstr%3D%22rgb%28225%2C%20225%2C%20225%29%22%2Cgradienttype%3D0%20%29%3B%20%2F%2A%20ie6-9%20%2A%2F%0A%09border%3A3px%20solid%20rgb%28229%2C%20229%2C%20229%29%3B%0A%09border-radius%3A50%25%3B%0A%09cursor%3A%20pointer%3B%0A%09box-sizing%3Acontent-box%3B%0A%7D%0A.hesperiden%20.tp-bullet%3Ahover%2C%0A.hesperiden%20.tp-bullet.selected%20%7B%0A%09background%3Argb%28102%2C%20102%2C%20102%29%3B%0A%7D%0A.hesperiden%20.tp-bullet-image%20%7B%0A%7D%0A.hesperiden%20.tp-bullet-title%20%7B%0A%7D%0A%0A");
+					var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+					if(htmlDiv) {
+						htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+					}
+					else{
+						var htmlDiv = document.createElement('div');
+						htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+						document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+					}
+				  </script>
+				</div>
+</script>
+<meta charset="UTF-8">
 <link rel="profile" href="#">
 <style type="text/css" data-type="vc_custom-css">/*Slider Resoulution*/
 #rev_slider_1_1 p{
@@ -256,7 +355,36 @@ div#our-approach-stat {
 /*    }*/
 /*}*/
 
+@media screen and (max-width: 600px) {
+  .sidr-class-mobile-menu-searchform a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .sidr-class-mobile-menu-searchform  a.icon {
+    float: right;
+    display: block;
+  }
+}
 
+@media screen and (max-width: 600px) {
+  .sidr-class-mobile-menu-searchform {position: relative;}
+  .sidr-class-mobile-menu-searchform {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .sidr-class-mobile-menu-searchform  a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .sidr-class-mobile-menu-searchform {float: none;}
+  .sidr-class-mobile-menu-searchform  {position: relative;}
+  .sidr-class-mobile-menu-searchform {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
 
 .children-white-icon img {
     width: 120px;
@@ -951,6 +1079,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 	wp.i18n.setLocaleData( localeData, domain );
 } )( "default", {"translation-revision-date":"2022-07-05 17:05:41+0000","generator":"GlotPress\/4.0.0-alpha.1","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"en_GB"},"Notifications":["Notifications"]}},"comment":{"reference":"wp-includes\/js\/dist\/a11y.js"}} );
 </script>
+
 <script type='text/javascript' src='https://m2m.org/wp-includes/js/dist/a11y.min.js?ver=a38319d7ba46c6e60f7f9d4c371222c5' id='wp-a11y-js'></script>
 <script type='text/javascript' id='plupload-handlers-js-extra'>
 /* <![CDATA[ */
@@ -1066,7 +1195,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>
 	
 	<div class="wpex-site-overlay"></div>
-<a href="#content" class="skip-to-content">skip to Main Content</a><span data-ls_id="#site_top"></span>
+<a href="# " class="skip-to-content">skip to Main Content</a><span data-ls_id="#site_top"></span>
 	<div id="outer-wrap" class="clr">
 
 		
@@ -1084,7 +1213,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<ul id="top-bar-social-list" class="wpex-clr">
 
 		
-		<li><a href="#" title="Twitter" target="_blank" class="wpex-twitter wpex-social-btn wpex-social-btn-no-style"><span class="ticon ticon-twitter" aria-hidden="true"></span><span class="screen-reader-text">Twitter</span></a></li><li><a href="https://www.facebook.com/mothers2mothersintl/" title="Facebook" target="_blank" class="wpex-facebook wpex-social-btn wpex-social-btn-no-style"><span class="ticon ticon-facebook" aria-hidden="true"></span><span class="screen-reader-text">Facebook</span></a></li><li><a href="https://www.instagram.com/mothers2mothers/?hl=en" title="Instagram" target="_blank" class="wpex-instagram wpex-social-btn wpex-social-btn-no-style"><span class="ticon ticon-instagram" aria-hidden="true"></span><span class="screen-reader-text">Instagram</span></a></li><li><a href="https://www.linkedin.com/company/mothers2mothers" title="LinkedIn" target="_blank" class="wpex-linkedin wpex-social-btn wpex-social-btn-no-style"><span class="ticon ticon-linkedin" aria-hidden="true"></span><span class="screen-reader-text">LinkedIn</span></a></li><li><a href="https://www.youtube.com/channel/UCAWmfPE1F-NP6sgWegMvp9w" title="Youtube" target="_blank" class="wpex-youtube wpex-social-btn wpex-social-btn-no-style"><span class="ticon ticon-youtube" aria-hidden="true"></span><span class="screen-reader-text">Youtube</span></a></li>
+		<li><a href="# "  title="Twitter" target="_blank" class="wpex-twitter wpex-social-btn wpex-social-btn-no-style"><span class="ticon ticon-twitter" aria-hidden="true"></span><span class="screen-reader-text">Twitter</span></a></li><li><a href="https://www.facebook.com/mothers2mothersintl/" title="Facebook" target="_blank" class="wpex-facebook wpex-social-btn wpex-social-btn-no-style"><span class="ticon ticon-facebook" aria-hidden="true"></span><span class="screen-reader-text">Facebook</span></a></li><li><a href="https://www.instagram.com/mothers2mothers/?hl=en" title="Instagram" target="_blank" class="wpex-instagram wpex-social-btn wpex-social-btn-no-style"><span class="ticon ticon-instagram" aria-hidden="true"></span><span class="screen-reader-text">Instagram</span></a></li><li><a href="https://www.linkedin.com/company/mothers2mothers" title="LinkedIn" target="_blank" class="wpex-linkedin wpex-social-btn wpex-social-btn-no-style"><span class="ticon ticon-linkedin" aria-hidden="true"></span><span class="screen-reader-text">LinkedIn</span></a></li><li><a href="https://www.youtube.com/channel/UCAWmfPE1F-NP6sgWegMvp9w" title="Youtube" target="_blank" class="wpex-youtube wpex-social-btn wpex-social-btn-no-style"><span class="ticon ticon-youtube" aria-hidden="true"></span><span class="screen-reader-text">Youtube</span></a></li>
 	</ul>
 
 	
@@ -3914,4 +4043,521 @@ var give_currency_switcher = {"nonce":"4266d6f8c0","notice_dismiss_image":"https
 		</div>
 		<!-- / Cookie Notice plugin -->
 <script>(function(){var js = "window['__CF$cv$params']={r:'731f0e304e738507',m:'.XvD.Bn9..g4PVuFBHegcNNknPbG2LoR5awQwY0WHVg-1659026415-0-ATTwDLehzEkhWJMYToa9h6ZTZ6RSA4VgkkK8DLVdC1RmHuobDIEr6GCTpJWPubWGVX+UIfsYpz2lzH+QeT8fPFAhTyrG280009ryEG79GRTwHhcwZu94tU8eQsivSR8OHw==',s:[0x5c9783eef4,0x13228014e5],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+
+<link rel='stylesheet' id='gforms_reset_css-css'  href='https://m2m.org/wp-content/plugins/gravityforms/legacy/css/formreset.min.css?ver=2.6.4' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_formsmain_css-css'  href='https://m2m.org/wp-content/plugins/gravityforms/legacy/css/formsmain.min.css?ver=2.6.4' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_ready_class_css-css'  href='https://m2m.org/wp-content/plugins/gravityforms/legacy/css/readyclass.min.css?ver=2.6.4' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_browsers_css-css'  href='https://m2m.org/wp-content/plugins/gravityforms/legacy/css/browsers.min.css?ver=2.6.4' type='text/css' media='all' />
+<!--[if IE 8]>
+<link rel='stylesheet' id='wpex-ie8-css'  href='https://m2m.org/wp-content/themes/Total/assets/css/wpex-ie8.css?ver=4.9.3' type='text/css' media='all' />
+<![endif]-->
+<!--[if IE 9]>
+<link rel='stylesheet' id='wpex-ie9-css'  href='https://m2m.org/wp-content/themes/Total/assets/css/wpex-ie9.css?ver=4.9.3' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='wpex-gravity-forms-css'  href='https://m2m.org/wp-content/themes/Total/assets/css/wpex-gravity-forms.css?ver=4.9.3' type='text/css' media='all' />
+<script type='text/javascript' src='https://m2m.org/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://m2m.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://m2m.org/wp-includes/js/jquery/ui/core.min.js?ver=1.13.1' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='https://m2m.org/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.13.1' id='jquery-ui-datepicker-js'></script>
+<script type='text/javascript' id='jquery-ui-datepicker-js-after'>
+jQuery(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"dS MM yy","firstDay":1,"isRTL":false});});
+</script>
+<script type='text/javascript' src='https://m2m.org/wp-includes/js/jquery/ui/mouse.min.js?ver=1.13.1' id='jquery-ui-mouse-js'></script>
+<script type='text/javascript' src='https://m2m.org/wp-includes/js/jquery/ui/slider.min.js?ver=1.13.1' id='jquery-ui-slider-js'></script>
+<script type='text/javascript' src='https://m2m.org/wp-includes/js/clipboard.min.js?ver=2.0.10' id='clipboard-js'></script>
+<script type='text/javascript' src='https://m2m.org/wp-includes/js/plupload/moxie.min.js?ver=1.3.5' id='moxiejs-js'></script>
+<script type='text/javascript' src='https://m2m.org/wp-includes/js/plupload/plupload.min.js?ver=2.1.9' id='plupload-js'></script>
+<script type='text/javascript' src='https://m2m.org/wp-includes/js/underscore.min.js?ver=1.13.3' id='underscore-js'></script>
+<script type='text/javascript' src='https://m2m.org/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9' id='regenerator-runtime-js'></script>
+<script type='text/javascript' src='https://m2m.org/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script type='text/javascript' src='https://m2m.org/wp-includes/js/dist/dom-ready.min.js?ver=d996b53411d1533a84951212ab6ac4ff' id='wp-dom-ready-js'></script>
+<script type='text/javascript' src='https://m2m.org/wp-includes/js/dist/hooks.min.js?ver=c6d64f2cb8f5c6bb49caca37f8828ce3' id='wp-hooks-js'></script>
+<script type='text/javascript' src='https://m2m.org/wp-includes/js/dist/i18n.min.js?ver=ebee46757c6a411e38fd079a7ac71d94' id='wp-i18n-js'></script>
+<script type='text/javascript' id='wp-i18n-js-after'>
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type='text/javascript' id='wp-a11y-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2022-07-05 17:05:41+0000","generator":"GlotPress\/4.0.0-alpha.1","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"en_GB"},"Notifications":["Notifications"]}},"comment":{"reference":"wp-includes\/js\/dist\/a11y.js"}} );
+</script>
+<script type='text/javascript' src='https://m2m.org/wp-includes/js/dist/a11y.min.js?ver=a38319d7ba46c6e60f7f9d4c371222c5' id='wp-a11y-js'></script>
+<script type='text/javascript' id='plupload-handlers-js-extra'>
+/* <![CDATA[ */
+var pluploadL10n = {"queue_limit_exceeded":"You have attempted to queue too many files.","file_exceeds_size_limit":"%s exceeds the maximum upload size for this site.","zero_byte_file":"This file is empty. Please try another.","invalid_filetype":"Sorry, you are not allowed to upload this file type.","not_an_image":"This file is not an image. Please try another.","image_memory_exceeded":"Memory exceeded. Please try another smaller file.","image_dimensions_exceeded":"This is larger than the maximum size. Please try another.","default_error":"An error occurred in the upload. Please try again later.","missing_upload_url":"There was a configuration error. Please contact the server administrator.","upload_limit_exceeded":"You may only upload one file.","http_error":"Unexpected response from the server. The file may have been uploaded successfully. Check in the Media Library or reload the page.","http_error_image":"The server cannot process the image. This can happen if the server is busy or does not have enough resources to complete the task. Uploading a smaller image may help. Suggested maximum size is 2,560 pixels.","upload_failed":"Upload failed.","big_upload_failed":"Please try uploading this file with the %1$sbrowser uploader%2$s.","big_upload_queued":"%s exceeds the maximum upload size for the multi-file uploader when used in your browser.","io_error":"IO error.","security_error":"Security error.","file_cancelled":"File cancelled.","upload_stopped":"Upload stopped.","dismiss":"Dismiss","crunching":"Crunching\u2026","deleted":"moved to the Bin.","error_uploading":"\u201c%s\u201d has failed to upload.","unsupported_image":"This image cannot be displayed in a web browser. For best results, convert it to JPEG before uploading.","noneditable_image":"This image cannot be processed by the web server. Convert it to JPEG or PNG before uploading.","file_url_copied":"The file URL has been copied to your clipboard"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://m2m.org/wp-includes/js/plupload/handlers.min.js?ver=6.0.1' id='plupload-handlers-js'></script>
+<script type='text/javascript' id='give_ffm_frontend-js-extra'>
+/* <![CDATA[ */
+var give_ffm_frontend = {"ajaxurl":"https:\/\/m2m.org\/wp-admin\/admin-ajax.php","error_message":"Please complete all required fields","submit_button_text":"Donate Now","nonce":"d6ccca11a6","confirmMsg":"Are you sure?","i18n":{"timepicker":{"choose_time":"Choose Time","time":"Time","hour":"Hour","minute":"Minute","second":"Second","done":"Done","now":"Now"},"repeater":{"max_rows":"You have added the maximum number of fields allowed."}},"plupload":{"url":"https:\/\/m2m.org\/wp-admin\/admin-ajax.php?nonce=2d52376831","flash_swf_url":"https:\/\/m2m.org\/wp-includes\/js\/plupload\/plupload.flash.swf","filters":[{"title":"Allowed Files","extensions":"*"}],"multipart":true,"urlstream_upload":true}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://m2m.org/wp-content/plugins/give-form-field-manager/assets/dist/js/give-ffm-frontend.js?ver=2.0.3' id='give_ffm_frontend-js'></script>
+<script type='text/javascript' id='give-tributes-common-js-extra'>
+/* <![CDATA[ */
+var give_tributes_common_vars = {"give_tribute_characters_left":"Characters left","ajax_url":"https:\/\/m2m.org\/wp-admin\/admin-ajax.php","give_tribute_receipt_limit_exceed":"Sorry! You cannot add notify people more than 5."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://m2m.org/wp-content/plugins/give-tributes/assets/js/give-tributes-common.min.js?ver=1.5.9' id='give-tributes-common-js'></script>
+<script type='text/javascript' src='https://m2m.org/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.4.8.3' id='tp-tools-js'></script>
+<script type='text/javascript' src='https://m2m.org/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.8.3' id='revmin-js'></script>
+<script type='text/javascript' src='https://m2m.org/wp-content/plugins/sticky-menu-or-anything-on-scroll/assets/js/jq-sticky-anything.min.js?ver=2.1.1' id='stickyAnythingLib-js'></script>
+<script type='text/javascript' id='give-js-extra'>
+/* <![CDATA[ */
+var give_global_vars = {"ajaxurl":"https:\/\/m2m.org\/wp-admin\/admin-ajax.php","checkout_nonce":"1470912de5","currency":"GBP","currency_sign":"\u00a3","currency_pos":"before","thousands_separator":",","decimal_separator":".","no_gateway":"Please select a payment method.","bad_minimum":"The minimum custom donation amount for this form is","bad_maximum":"The maximum custom donation amount for this form is","general_loading":"Loading...","purchase_loading":"Please Wait...","textForOverlayScreen":"<h3>Processing...<\/h3><p>This will only take a second!<\/p>","number_decimals":"2","is_test_mode":"","give_version":"2.19.8","magnific_options":{"main_class":"give-modal","close_on_bg_click":false},"form_translation":{"payment-mode":"Please select payment mode.","give_first":"Please enter your first name.","give_last":"Please enter your last name.","give_email":"Please enter a valid email address.","give_user_login":"Invalid email address or username.","give_user_pass":"Enter a password.","give_user_pass_confirm":"Enter the password confirmation.","give_agree_to_terms":"You must agree to the terms and conditions."},"confirm_email_sent_message":"Please check your email and click on the link to access your complete donation history.","ajax_vars":{"ajaxurl":"https:\/\/m2m.org\/wp-admin\/admin-ajax.php","ajaxNonce":"b7e75273e8","loading":"Loading","select_option":"Please select an option","default_gateway":"stripe","permalinks":"1","number_decimals":2},"cookie_hash":"f600e04fbad340e1fc1f1c6b7d8f0526","session_nonce_cookie_name":"wp-give_session_reset_nonce_f600e04fbad340e1fc1f1c6b7d8f0526","session_cookie_name":"wp-give_session_f600e04fbad340e1fc1f1c6b7d8f0526","delete_session_nonce_cookie":"0"};
+var giveApiSettings = {"root":"https:\/\/m2m.org\/wp-json\/give-api\/v2\/","rest_base":"give-api\/v2"};
+/* ]]> */
+</script>
+<script type='text/javascript' id='give-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "give", {"translation-revision-date":"2022-04-01 11:17:56+0000","generator":"GlotPress\/3.0.0-rc.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"en_GB"},"Dismiss this notice.":["Dismiss this notice."]}},"comment":{"reference":"assets\/dist\/js\/give.js"}} );
+</script>
+<script type='text/javascript' src='https://m2m.org/wp-content/plugins/give/assets/dist/js/give.js?ver=15cdae8cb86a78d6' id='give-js'></script>
+<script type='text/javascript' id='give-fee-recovery-js-extra'>
+/* <![CDATA[ */
+var give_fee_recovery_object = {"give_fee_zero_based_currency":"[\"JPY\",\"KRW\",\"CLP\",\"ISK\",\"BIF\",\"DJF\",\"GNF\",\"KHR\",\"KPW\",\"LAK\",\"LKR\",\"MGA\",\"MZN\",\"VUV\"]"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://m2m.org/wp-content/plugins/give-fee-recovery/assets/js/give-fee-recovery-public.min.js?ver=1.9.7' id='give-fee-recovery-js'></script>
+<script type='text/javascript' id='give-gift-aid-js-extra'>
+/* <![CDATA[ */
+var give_gift_aid_vars = {"gift_aid_site_url":"https:\/\/m2m.org","gift_aid_base_country":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://m2m.org/wp-content/plugins/give-gift-aid/assets/js/give-gift-aid-frontend.min.js?ver=1.2.7' id='give-gift-aid-js'></script>
+<script type='text/javascript' src='https://m2m.org/wp-content/plugins/give-tributes/assets/js/give-tributes-public.min.js?ver=1.5.9' id='give-tributes-js'></script>
+<script type='text/javascript' id='give_recurring_script-js-extra'>
+/* <![CDATA[ */
+var Give_Recurring_Vars = {"email_access":"1","pretty_intervals":{"1":"Every","2":"Every two","3":"Every three","4":"Every four","5":"Every five","6":"Every six"},"pretty_periods":{"day":"Daily","week":"Weekly","month":"Monthly","quarter":"Quarterly","half-year":"Semi-Annually","year":"Yearly"},"messages":{"daily_forbidden":"The selected payment method does not support daily recurring giving. Please select another payment method or supported giving frequency.","confirm_cancel":"Are you sure you want to cancel this subscription?"},"multi_level_message_pre_text":"You have chosen to donate"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://m2m.org/wp-content/plugins/give-recurring/assets/js/give-recurring.js?ver=1.15.0' id='give_recurring_script-js'></script>
+<script type='text/javascript' src='https://www.google.com/recaptcha/api.js?ver=6.0.1' id='give-captcha-js-js'></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='https://m2m.org/wp-content/themes/Total/assets/js/dynamic/html5.js?ver=4.9.3' id='wpex-html5shiv-js'></script>
+<![endif]-->
+<script type='text/javascript' id='cookie-notice-front-js-extra'>
+/* <![CDATA[ */
+var cnArgs = {"ajaxUrl":"https:\/\/m2m.org\/wp-admin\/admin-ajax.php","nonce":"35c3dfc563","hideEffect":"fade","position":"bottom","onScroll":"0","onScrollOffset":"100","onClick":"0","cookieName":"cookie_notice_accepted","cookieTime":"2592000","cookieTimeRejected":"2592000","cookiePath":"\/","cookieDomain":"","redirection":"0","cache":"0","refuse":"0","revokeCookies":"0","revokeCookiesOpt":"automatic","secure":"1"};
+/* ]]> */
+</script>
+<script async type='text/javascript' src='https://m2m.org/wp-content/plugins/cookie-notice/includes/../js/front.min.js?ver=2.2.3' id='cookie-notice-front-js'></script>
+<script type='text/javascript' defer='defer' src='https://m2m.org/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.6.4' id='gform_json-js'></script>
+<script type='text/javascript' id='gform_gravityforms-js-extra'>
+/* <![CDATA[ */
+var gf_global = {"gf_currency_config":{"name":"Pound Sterling","symbol_left":"&#163;","symbol_right":"","symbol_padding":" ","thousand_separator":",","decimal_separator":".","decimals":2,"code":"GBP"},"base_url":"https:\/\/m2m.org\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/m2m.org\/wp-content\/plugins\/gravityforms\/images\/spinner.svg","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+var gform_i18n = {"datepicker":{"days":{"monday":"Mon","tuesday":"Tue","wednesday":"Wed","thursday":"Thu","friday":"Fri","saturday":"Sat","sunday":"Sun"},"months":{"january":"January","february":"February","march":"March","april":"April","may":"May","june":"June","july":"July","august":"August","september":"September","october":"October","november":"November","december":"December"},"firstDay":1,"iconText":"Select date"}};
+var gf_legacy_multi = {"4":"1"};
+var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file is not allowed. Must be one of the following:","delete_file":"Delete this file","in_progress":"in progress","file_exceeds_limit":"File exceeds size limit","illegal_extension":"This type of file is not allowed.","max_reached":"Maximum number of files reached","unknown_error":"There was a problem while saving the file on the server","currently_uploading":"Please wait for the uploading to complete","cancel":"Cancel","cancel_upload":"Cancel this upload","cancelled":"Cancelled"},"vars":{"images_url":"https:\/\/m2m.org\/wp-content\/plugins\/gravityforms\/images"}};
+/* ]]> */
+</script>
+<script type='text/javascript' id='gform_gravityforms-js-before'>
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,initializeOnLoaded:function(o){gform.domLoaded&&gform.scriptsLoaded?o():!gform.domLoaded&&gform.scriptsLoaded?window.addEventListener("DOMContentLoaded",o):document.addEventListener("gform_main_scripts_loaded",o)},hooks:{action:{},filter:{}},addAction:function(o,n,r,t){gform.addHook("action",o,n,r,t)},addFilter:function(o,n,r,t){gform.addHook("filter",o,n,r,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,n){gform.removeHook("action",o,n)},removeFilter:function(o,n,r){gform.removeHook("filter",o,n,r)},addHook:function(o,n,r,t,i){null==gform.hooks[o][n]&&(gform.hooks[o][n]=[]);var e=gform.hooks[o][n];null==i&&(i=n+"_"+e.length),gform.hooks[o][n].push({tag:i,callable:r,priority:t=null==t?10:t})},doHook:function(n,o,r){var t;if(r=Array.prototype.slice.call(r,1),null!=gform.hooks[n][o]&&((o=gform.hooks[n][o]).sort(function(o,n){return o.priority-n.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==n?t.apply(null,r):r[0]=t.apply(null,r)})),"filter"==n)return r[0]},removeHook:function(o,n,t,i){var r;null!=gform.hooks[o][n]&&(r=(r=gform.hooks[o][n]).filter(function(o,n,r){return!!(null!=i&&i!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][n]=r)}});
+</script>
+<script type='text/javascript' defer='defer' src='https://m2m.org/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.6.4' id='gform_gravityforms-js'></script>
+<script type='text/javascript' defer='defer' src='https://www.google.com/recaptcha/api.js?hl=en&#038;ver=6.0.1#038;render=explicit' id='gform_recaptcha-js'></script>
+
+                        </form>
+                        </div>
+                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_6' id='gform_ajax_frame_6' title='This iframe contains the logic required to handle Ajax powered Gravity Forms.'></iframe>
+                <script type="text/javascript">
+gform.initializeOnLoaded( function() {gformInitSpinner( 6, 'https://m2m.org/wp-content/plugins/gravityforms/images/spinner.svg' );jQuery('#gform_ajax_frame_6').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_6');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_6').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_6').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_6').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_6').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_6').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_6').val();gformInitSpinner( 6, 'https://m2m.org/wp-content/plugins/gravityforms/images/spinner.svg' );jQuery(document).trigger('gform_page_loaded', [6, current_page]);window['gf_submitting_6'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_6').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_6').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [6]);window['gf_submitting_6'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_6').text());}, 50);}else{jQuery('#gform_6').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [6, current_page]);} );} );
+</script>
+
+<script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss="";
+						if(htmlDiv) {
+							htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+						}else{
+							var htmlDiv = document.createElement("div");
+							htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+							document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+						}
+					</script>
+<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
+<script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss="";
+				if(htmlDiv) {
+					htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+				}else{
+					var htmlDiv = document.createElement("div");
+					htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+					document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+				}
+			</script>
+		<script type="text/javascript">
+if (setREVStartSize!==undefined) setREVStartSize(
+	{c: '#rev_slider_1_1', responsiveLevels: [1240,1024,778,480], gridwidth: [1080,1080,778,480], gridheight: [600,600,600,800], sliderLayout: 'auto'});
+			
+var revapi1,
+	tpj;	
+(function() {			
+	if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded",onLoad); else onLoad();	
+	function onLoad() {				
+		if (tpj===undefined) { tpj = jQuery; if("off" == "on") tpj.noConflict();}
+	if(tpj("#rev_slider_1_1").revolution == undefined){
+		revslider_showDoubleJqueryError("#rev_slider_1_1");
+	}else{
+		revapi1 = tpj("#rev_slider_1_1").show().revolution({
+			sliderType:"standard",
+			jsFileLocation:"//m2m.org/wp-content/plugins/revslider/public/assets/js/",
+			sliderLayout:"auto",
+			dottedOverlay:"none",
+			delay:9000,
+			navigation: {
+				keyboardNavigation:"off",
+				keyboard_direction: "horizontal",
+				mouseScrollNavigation:"off",
+ 							mouseScrollReverse:"default",
+				onHoverStop:"off",
+				bullets: {
+					enable:true,
+					hide_onmobile:false,
+					style:"hesperiden",
+					hide_onleave:false,
+					direction:"horizontal",
+									container:"layergrid",
+					h_align:"center",
+					v_align:"bottom",
+					h_offset:0,
+					v_offset:25,
+					space:5,
+					tmp:''
+				}
+			},
+			responsiveLevels:[1240,1024,778,480],
+			visibilityLevels:[1240,1024,778,480],
+			gridwidth:[1080,1080,778,480],
+			gridheight:[600,600,600,800],
+			lazyType:"none",
+			shadow:0,
+			spinner:"spinner0",
+			stopLoop:"off",
+			stopAfterLoops:-1,
+			stopAtSlide:-1,
+			shuffle:"off",
+			autoHeight:"off",
+			disableProgressBar:"on",
+			hideThumbsOnMobile:"off",
+			hideSliderAtLimit:0,
+			hideCaptionAtLimit:0,
+			hideAllCaptionAtLilmit:0,
+			debugMode:false,
+			fallbacks: {
+				simplifyAll:"off",
+				nextSlideOnWindowFocus:"off",
+				disableFocusListener:false,
+			}
+		});
+	}; /* END OF revapi call */
+	
+ }; /* END OF ON LOAD FUNCTION */
+}()); /* END OF WRAPPING FUNCTION */
+</script>
+		<script>
+					var htmlDivCss = unescape(".hesperiden.tp-bullets%20%7B%0A%7D%0A.hesperiden.tp-bullets%3Abefore%20%7B%0A%09content%3A%22%20%22%3B%0A%09position%3Aabsolute%3B%0A%09width%3A100%25%3B%0A%09height%3A100%25%3B%0A%09background%3Atransparent%3B%0A%09padding%3A10px%3B%0A%09margin-left%3A-10px%3Bmargin-top%3A-10px%3B%0A%09box-sizing%3Acontent-box%3B%0A%20%20%20border-radius%3A8px%3B%0A%20%20%0A%7D%0A.hesperiden%20.tp-bullet%20%7B%0A%09width%3A12px%3B%0A%09height%3A12px%3B%0A%09position%3Aabsolute%3B%0A%09background%3A%20rgb%28153%2C%20153%2C%20153%29%3B%20%2F%2A%20old%20browsers%20%2A%2F%0A%20%20%20%20background%3A%20-moz-linear-gradient%28top%2C%20%20rgb%28153%2C%20153%2C%20153%29%200%25%2C%20rgb%28225%2C%20225%2C%20225%29%20100%25%29%3B%20%2F%2A%20ff3.6%2B%20%2A%2F%0A%20%20%20%20background%3A%20-webkit-linear-gradient%28top%2C%20%20rgb%28153%2C%20153%2C%20153%29%200%25%2Crgb%28225%2C%20225%2C%20225%29%20100%25%29%3B%20%2F%2A%20chrome10%2B%2Csafari5.1%2B%20%2A%2F%0A%20%20%20%20background%3A%20-o-linear-gradient%28top%2C%20%20rgb%28153%2C%20153%2C%20153%29%200%25%2Crgb%28225%2C%20225%2C%20225%29%20100%25%29%3B%20%2F%2A%20opera%2011.10%2B%20%2A%2F%0A%20%20%20%20background%3A%20-ms-linear-gradient%28top%2C%20%20rgb%28153%2C%20153%2C%20153%29%200%25%2Crgb%28225%2C%20225%2C%20225%29%20100%25%29%3B%20%2F%2A%20ie10%2B%20%2A%2F%0A%20%20%20%20background%3A%20linear-gradient%28to%20bottom%2C%20%20rgb%28153%2C%20153%2C%20153%29%200%25%2Crgb%28225%2C%20225%2C%20225%29%20100%25%29%3B%20%2F%2A%20w3c%20%2A%2F%0A%20%20%20%20filter%3A%20progid%3Adximagetransform.microsoft.gradient%28%20%0A%20%20%20%20startcolorstr%3D%22rgb%28153%2C%20153%2C%20153%29%22%2C%20endcolorstr%3D%22rgb%28225%2C%20225%2C%20225%29%22%2Cgradienttype%3D0%20%29%3B%20%2F%2A%20ie6-9%20%2A%2F%0A%09border%3A3px%20solid%20rgb%28229%2C%20229%2C%20229%29%3B%0A%09border-radius%3A50%25%3B%0A%09cursor%3A%20pointer%3B%0A%09box-sizing%3Acontent-box%3B%0A%7D%0A.hesperiden%20.tp-bullet%3Ahover%2C%0A.hesperiden%20.tp-bullet.selected%20%7B%0A%09background%3Argb%28102%2C%20102%2C%20102%29%3B%0A%7D%0A.hesperiden%20.tp-bullet-image%20%7B%0A%7D%0A.hesperiden%20.tp-bullet-title%20%7B%0A%7D%0A%0A");
+					var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+					if(htmlDiv) {
+						htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+					}
+					else{
+						var htmlDiv = document.createElement('div');
+						htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+						document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+					}
+				  </script>
+				</div><!-- END REVOLUTION SLIDER --></div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div id="latest-news" data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_custom_1583747241506 vc_row-no-padding wpex-vc_row-has-fill wpex-vc-row-stretched" style="background-position:center top !important;"><div class="wpb_column latest-news_text-col vc_column_container vc_col-sm-9"><div class="vc_column-inner "><div class="wpb_wrapper">
+
+		<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+			/* <![CDATA[ */
+			var give_cs_json_obj = '{\"supported_currency\":{\"USD\":{\"admin_label\":\"US Dollars (&#36;)\",\"symbol\":\"$\",\"setting\":{\"currency_position\":\"before\",\"thousands_separator\":\",\",\"decimal_separator\":\".\",\"number_decimals\":2}},\"EUR\":{\"admin_label\":\"Euros (&euro;)\",\"symbol\":\"\\u20ac\",\"setting\":{\"currency_position\":\"before\",\"thousands_separator\":\".\",\"decimal_separator\":\",\",\"number_decimals\":2}},\"GBP\":{\"admin_label\":\"Pounds Sterling (&pound;)\",\"symbol\":\"\\u00a3\",\"setting\":{\"currency_position\":\"before\",\"thousands_separator\":\",\",\"decimal_separator\":\".\",\"number_decimals\":2}},\"CAD\":{\"admin_label\":\"Canadian Dollars (&#36;)\",\"symbol\":\"$\",\"setting\":{\"currency_position\":\"before\",\"thousands_separator\":\",\",\"decimal_separator\":\".\",\"number_decimals\":2}},\"ZAR\":{\"admin_label\":\"South African Rand (&#82;)\",\"symbol\":\"R\",\"setting\":{\"currency_position\":\"before\",\"thousands_separator\":\" \",\"decimal_separator\":\".\",\"number_decimals\":2}},\"CHF\":{\"admin_label\":\"Swiss Franc (&#67;&#72;&#70;)\",\"symbol\":\"CHF\",\"setting\":{\"currency_position\":\"before\",\"thousands_separator\":\" \",\"decimal_separator\":\".\",\"number_decimals\":2}}},\"form_1899\":{\"exchange_rates\":{\"USD\":\"1\",\"EUR\":\"1\",\"GBP\":0,\"CAD\":\"1\",\"ZAR\":\"10\",\"CHF\":\"1\"},\"decimal_number\":{\"USD\":\"2\",\"EUR\":\"2\",\"GBP\":2,\"CAD\":\"2\",\"ZAR\":\"2\",\"CHF\":\"2\"},\"custom_amounts\":{\"USD\":[false,false,false,false,false],\"EUR\":[false,false,false,false,false],\"GBP\":[false,false,false,false,false],\"CAD\":[false,false,false,false,false],\"ZAR\":[false,false,false,false,false],\"CHF\":[false,false,false,false,false]},\"support_gateways\":{\"USD\":{\"gateways\":[\"stripe\"],\"currency_label\":\"US Dollars\"},\"EUR\":{\"gateways\":[\"stripe\"],\"currency_label\":\"Euros\"},\"GBP\":{\"gateways\":[\"stripe\"],\"currency_label\":\"Pounds Sterling\"},\"CAD\":{\"gateways\":[\"stripe\"],\"currency_label\":\"Canadian Dollars\"},\"ZAR\":{\"gateways\":[\"stripe\"],\"currency_label\":\"South African Rand\"},\"CHF\":{\"gateways\":[\"stripe\"],\"currency_label\":\"Swiss Franc\"}},\"variable_prices\":[{\"has_label\":false},{\"has_label\":false},{\"has_label\":false},{\"has_label\":false},{\"has_label\":false}],\"minimum_amount\":\"1.000000\",\"maximum_amount\":\"999999.990000\",\"currency_acronym\":\"enabled\",\"decimals_enabled\":\"disabled\"}}';
+			/* ]]> */
+		</script>
+		
+	<script>
+	( function( $ ) {
+
+		$( document ).on( 'ready', function() {
+
+			$( '.vc_tta-tabs' ).each( function() {
+				var $tabs = $( this ).find( '.vc_tta-tab' );
+				$tabs.each( function( index, value ) {
+					$( this ).addClass( 'tab-index-' + index );
+				} );
+				var $tabContent = $( this ).find( '.vc_tta-panel' );
+				$tabContent.each( function( index, value ) {
+					$( this ).addClass( 'tab-index-' + index );
+				} );
+			} );
+
+		} );
+
+	} ) ( jQuery );
+	</script>
+
+    
+    <script>
+
+        ( function( $ ) {
+            'use strict';
+
+                // Get viewport width
+                var e = window, a = 'inner';
+                if ( ! ( 'innerWidth' in window ) ) {
+                    a = 'client';
+                    e = document.documentElement || document.body;
+                }
+                var viewportWidth = e[ a+'Width' ];
+
+                // Remove active class for tabs on windows smaller then 768 on load
+                if ( viewportWidth < 768 ) {
+
+                    $( '.vc_tta-tabs .vc_tta-panel' ).removeClass( 'vc_active' ).addClass( 'vc_was_active' );
+
+                }
+			
+				$(document).on('show.vc.accordion',function(e){
+					window.Give_Currency_Switcher.adjust_dropdown_width();
+				});
+
+
+        } ) ( jQuery );
+
+    </script>
+
+	<script type="text/javascript">
+			jQuery( document ).on( 'give_gateway_loaded', function() {
+				grecaptcha.render( 'give-recaptcha-element', {
+					'sitekey': '6LdugPIUAAAAAKaBJuSnVtK-MTNJEYueObacrwlX' // Add your own Google API sitekey here.
+				} );
+			} );
+	</script>
+	
+<div id="mobile-menu-search" class="clr wpex-hidden">
+	<form method="get" action="https://m2m.org/" class="mobile-menu-searchform">
+		<input type="search" name="s" autocomplete="off" aria-label="Search" placeholder="Search" />
+						<button type="submit" class="searchform-submit" aria-label="Submit search"><span class="ticon ticon-search"></span></button>
+	</form>
+</div>
+<a href="#outer-wrap" id="site-scroll-top"><span class="ticon ticon-angle-double-up" aria-hidden="true"></span><span class="screen-reader-text">Back To Top</span></a>
+<div id="wpex-searchform-overlay" class="header-searchform-wrap wpex-fs-overlay" data-placeholder="Type then hit enter to search&hellip;" data-disable-autocomplete="true">
+	<div class="wpex-close">&times;<span class="screen-reader-text">Close search</span></div>
+	<div class="wpex-inner wpex-scale">
+		<div class="wpex-title">Search</div>
+		
+<form method="get" class="searchform" action="https://m2m.org/">
+	<label>
+		<span class="screen-reader-text">Search</span>
+		<input type="search" class="field" name="s" placeholder="Search" />
+	</label>
+			<button type="submit" class="searchform-submit"><span class="ticon ticon-search" aria-hidden="true"></span><span class="screen-reader-text">Submit</span></button>
+</form>		<span class="ticon ticon-search" aria-hidden="true"></span>
+	</div>
+</div><div id="sidr-close"><div class="wpex-close"><a href="#" aria-hidden="true" role="button" tabindex="-1">&times;</a></div></div>    <!-- Facebook Pixel Event Code -->
+    <script type='text/javascript'>
+        document.addEventListener( 'wpcf7mailsent', function( event ) {
+        if( "fb_pxl_code" in event.detail.apiResponse){
+          eval(event.detail.apiResponse.fb_pxl_code);
+        }
+      }, false );
+    </script>
+    <!-- End Facebook Pixel Event Code -->
+    <div id='fb-pxl-ajax-code'></div><script>
+
+(function( $ ) {
+    $( document ).on( 'ready', function() {
+
+
+// US Mothers Day Donate Override added April 27, 2022
+if(document.querySelector('body.page-id-24406' ) !== null) {	
+
+setTimeout(() => {
+
+jQuery('#site-header #menu-main-menu > #menu-item-20667 a, #site-header .mobile-donate-button, #sidr-main #sidr-id-menu-main-menu #sidr-id-menu-item-20667 a').on('click', function (e) { 
+	e.preventDefault();	 
+	let top = jQuery('#give-form-24400-wrap').offset().top-140;
+	jQuery('html, body').animate({scrollTop: top}, 700);        
+});
+	 
+	},500);
+}
+// End code
+
+
+
+
+//Replace text placeholder in form Donate
+$('body.page-id-20946 #give-form-20943-2 #give-tributes-first-name-20943').attr("placeholder", "Donor First Name");
+$('body.page-id-20946 #give-form-20943-2 #give-tributes-last-name-20943').attr("placeholder", "Donor Last Name");
+
+
+
+//Replace link Donate on mobile 
+if($('body').hasClass('page-id-23600')) {    
+    $('#site-header').find('.mobile-donate-button').addClass('local-scroll').attr('href','#form');
+}
+
+
+
+/*$('.header-one #menu-main-menu > .link-donate a').on('click', function (e) {
+        if (this.hash !== "") {
+
+            //e.preventDefault();
+           
+            var hash = this.hash;
+            let vh = 130;  
+            var top = $(hash).offset().top - vh;
+            $('html, body').animate({scrollTop: top}, 800, function () {
+                window.location.hash = hash;
+            });
+        }
+    });*/
+
+
+        if( document.querySelector('#give-tributes-first-name-20943' ) !== null) { 
+            document.querySelector("#give-tributes-first-name-20943").setAttribute("placeholder", "Donor First Name");
+        }
+
+       if( document.querySelector('#give-tributes-first-name-20943' ) !== null) { 
+            document.querySelector("#give-tributes-last-name-20943").setAttribute("placeholder", "Donor Last Name");  
+        }      
+
+    });
+
+$(window).on( 'load', function() {  
+
+     if( document.querySelector('#give-tributes-first-name-23606' ) !== null) {
+           document.querySelector("#give-tributes-first-name-23606").setAttribute("placeholder", "Donor First Name");
+     }
+     if( document.querySelector('#give-tributes-last-name-23606' ) !== null) {
+         document.querySelector("#give-tributes-last-name-23606").setAttribute("placeholder", "Donor First Name");
+    }          
+         
+
+});
+
+
+
+}( jQuery ));
+
+
+
+</script>			<script type="text/javascript">
+				function revslider_showDoubleJqueryError(sliderID) {
+					var errorMessage = "Revolution Slider Error: You have some jquery.js library include that comes after the revolution files js include.";
+					errorMessage += "<br> This includes make eliminates the revolution slider libraries, and make it not work.";
+					errorMessage += "<br><br> To fix it you can:<br>&nbsp;&nbsp;&nbsp; 1. In the Slider Settings -> Troubleshooting set option:  <strong><b>Put JS Includes To Body</b></strong> option to true.";
+					errorMessage += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jquery.js include and remove it.";
+					errorMessage = "<span style='font-size:16px;color:#BC0C06;'>" + errorMessage + "</span>";
+						jQuery(sliderID).show().html(errorMessage);
+				}
+			</script>
+			<link rel='stylesheet' id='font-awesome-css'  href='https://m2m.org/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min.css?ver=6.0.5' type='text/css' media='all' />
+<script type='text/javascript' id='stickThis-js-extra'>
+/* <![CDATA[ */
+var sticky_anything_engage = {"element":".banner-message","topspace":"0","minscreenwidth":"0","maxscreenwidth":"999999","zindex":"1","legacymode":"","dynamicmode":"","debugmode":"","pushup":"","adminbar":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://m2m.org/wp-content/plugins/sticky-menu-or-anything-on-scroll/assets/js/stickThis.js?ver=2.1.1' id='stickThis-js'></script>
+<script type='text/javascript' id='give-stripe-js-js-extra'>
+/* <![CDATA[ */
+var give_stripe_vars = {"zero_based_currency":"","zero_based_currencies_list":["JPY","KRW","CLP","ISK","BIF","DJF","GNF","KHR","KPW","LAK","LKR","MGA","MZN","VUV"],"sitename":"mothers2mothers","checkoutBtnTitle":"Donate","publishable_key":"pk_live_8P2Wnp61j22VnuplhrX644A400wym4jbqn","checkout_image":"","checkout_address":"","checkout_processing_text":"Donation Processing...","give_version":"2.19.8","cc_fields_format":"multi","card_number_placeholder_text":"Card Number","card_cvc_placeholder_text":"CVC","donate_button_text":"Donate Now","element_font_styles":{"cssSrc":false},"element_base_styles":{"color":"#32325D","fontWeight":500,"fontSize":"16px","fontSmoothing":"antialiased","::placeholder":{"color":"#222222"},":-webkit-autofill":{"color":"#e39f48"}},"element_complete_styles":{},"element_empty_styles":{},"element_invalid_styles":{},"float_labels":"","base_country":"GB","preferred_locale":"en","stripe_card_update":"","stripe_becs_update":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://js.stripe.com/v3/?ver=2.19.8' id='give-stripe-js-js'></script>
+<script type='text/javascript' src='https://m2m.org/wp-content/plugins/give/assets/dist/js/give-stripe.js?ver=2.19.8' id='give-stripe-onpage-js-js'></script>
+<script type='text/javascript' id='give-donation-summary-script-frontend-js-extra'>
+/* <![CDATA[ */
+var GiveDonationSummaryData = {"currencyPrecisionLookup":{"USD":2,"EUR":2,"GBP":2,"AUD":2,"BRL":2,"CAD":2,"CZK":2,"DKK":2,"HKD":2,"HUF":2,"ILS":2,"JPY":0,"MYR":2,"MXN":2,"MAD":2,"NZD":2,"NOK":2,"PHP":2,"PLN":2,"SGD":2,"KRW":0,"ZAR":2,"SEK":2,"CHF":2,"TWD":2,"THB":2,"INR":2,"TRY":2,"IRR":2,"RUB":2,"AED":2,"AMD":2,"ANG":2,"ARS":2,"AWG":2,"BAM":2,"BDT":2,"BHD":3,"BMD":2,"BND":2,"BOB":2,"BSD":2,"BWP":2,"BZD":2,"CLP":0,"CNY":2,"COP":2,"CRC":2,"CUC":2,"CUP":2,"DOP":2,"EGP":2,"GIP":2,"GTQ":2,"HNL":2,"HRK":2,"IDR":2,"ISK":0,"JMD":2,"JOD":2,"KES":2,"KWD":2,"KYD":2,"MKD":2,"NPR":2,"OMR":3,"PEN":2,"PKR":2,"RON":2,"SAR":2,"SZL":2,"TOP":2,"TZS":2,"UAH":2,"UYU":2,"VEF":2,"XCD":2,"AFN":2,"ALL":2,"AOA":2,"AZN":2,"BBD":2,"BGN":2,"BIF":0,"BTC":8,"BTN":1,"BYR":2,"BYN":2,"CDF":2,"CVE":2,"DJF":0,"DZD":2,"ERN":2,"ETB":2,"FJD":2,"FKP":2,"GEL":2,"GGP":2,"GHS":2,"GMD":2,"GNF":0,"GYD":2,"HTG":2,"IMP":2,"IQD":2,"IRT":2,"JEP":2,"KGS":2,"KHR":0,"KMF":2,"KPW":0,"KZT":2,"LAK":0,"LBP":2,"LKR":0,"LRD":2,"LSL":2,"LYD":3,"MDL":2,"MGA":0,"MMK":2,"MNT":2,"MOP":2,"MRO":2,"MUR":2,"MVR":1,"MWK":2,"MZN":0,"NAD":2,"NGN":2,"NIO":2,"PAB":2,"PGK":2,"PRB":2,"PYG":2,"QAR":2,"RSD":2,"RWF":2,"SBD":2,"SCR":2,"SDG":2,"SHP":2,"SLL":2,"SOS":2,"SRD":2,"SSP":2,"STD":2,"SYP":2,"TJS":2,"TMT":2,"TND":3,"TTD":2,"UGX":2,"UZS":2,"VND":1,"VUV":0,"WST":2,"XAF":2,"XOF":2,"XPF":2,"YER":2,"ZMW":2},"recurringLabelLookup":{"day":"Daily","week":"Weekly","month":"Monthly","quarter":"Quarterly","half-year":"Semi-Annually","year":"Yearly"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://m2m.org/wp-content/plugins/give/assets/dist/js/give-donation-summary.js?ver=2.19.8' id='give-donation-summary-script-frontend-js'></script>
+<script type='text/javascript' id='give-currency-switcher-js-extra'>
+/* <![CDATA[ */
+var give_currency_switcher = {"nonce":"e1c4c865b0","notice_dismiss_image":"https:\/\/m2m.org\/wp-content\/plugins\/give\/assets\/dist\/images\/close.svg","currency_not_support_message":"<b>{currency_code}<\/b> is not supported by <b>{payment_gateway}<\/b> gateway.","cs_custom_price_message":"","setting_vars":{"base_currency":"GBP"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://m2m.org/wp-content/plugins/give-currency-switcher/assets/js/give-currency-switcher-frontend.min.js?ver=1.5.1' id='give-currency-switcher-js'></script>
+<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js' id='slick-js-js'></script>
+<script type='text/javascript' src='https://m2m.org/wp-content/themes/total-child-theme/js/global.js' id='global-js'></script>
+<script type='text/javascript' id='wpex-core-js-extra'>
+/* <![CDATA[ */
+var wpexLocalize = {"isRTL":"","mainLayout":"full-width","menuSearchStyle":"overlay","siteHeaderStyle":"one","megaMenuJS":"1","superfishDelay":"600","superfishSpeed":"fast","superfishSpeedOut":"fast","menuWidgetAccordion":"1","hasMobileMenu":"1","mobileMenuBreakpoint":"959","mobileMenuStyle":"sidr","mobileMenuToggleStyle":"icon_buttons","scrollToHash":"1","scrollToHashTimeout":"500","localScrollUpdateHash":"","localScrollHighlight":"1","localScrollSpeed":"1000","localScrollEasing":"easeInOutExpo","scrollTopSpeed":"1000","scrollTopOffset":"100","customSelects":".woocommerce-ordering .orderby, #dropdown_product_cat, .widget_categories form, .widget_archive select, .single-product .variations_form .variations select, .vcex-form-shortcode select","responsiveDataBreakpoints":{"tl":"1024px","tp":"959px","pl":"767px","pp":"479px"},"ajaxurl":"https:\/\/m2m.org\/wp-admin\/admin-ajax.php","loadMore":{"text":"Load More","loadingText":"Loading&hellip;","failedText":"Failed to load posts."},"hasStickyHeader":"1","stickyHeaderStyle":"standard","hasStickyMobileHeader":"1","overlayHeaderStickyTop":"0","stickyHeaderBreakPoint":"960","sidrSource":"#sidr-close, #site-navigation, #mobile-menu-search","sidrDisplace":"","sidrSide":"right","sidrBodyNoScroll":"","sidrSpeed":"300"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://m2m.org/wp-content/themes/Total/assets/js/total.min.js?ver=4.9.3' id='wpex-core-js'></script>
+<script type='text/javascript' src='https://m2m.org/wp-content/plugins/page-links-to/dist/new-tab.js?ver=3.3.6' id='page-links-to-js'></script>
+<script type='text/javascript' src='https://m2m.org/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=6.0.5' id='wpb_composer_front_js-js'></script>
+<script type='text/javascript' id='popup-maker-site-js-extra'>
+/* <![CDATA[ */
+var pum_vars = {"version":"1.16.7","pm_dir_url":"https:\/\/m2m.org\/wp-content\/plugins\/popup-maker\/","ajaxurl":"https:\/\/m2m.org\/wp-admin\/admin-ajax.php","restapi":"https:\/\/m2m.org\/wp-json\/pum\/v1","rest_nonce":null,"default_theme":"912","debug_mode":"","disable_tracking":"","home_url":"\/","message_position":"top","core_sub_forms_enabled":"1","popups":[],"analytics_route":"analytics","analytics_api":"https:\/\/m2m.org\/wp-json\/pum\/v1"};
+var pum_sub_vars = {"ajaxurl":"https:\/\/m2m.org\/wp-admin\/admin-ajax.php","message_position":"top"};
+var pum_popups = {"pum-24856":{"triggers":[{"type":"click_open","settings":{"cookie_name":["pum-24856"],"extra_selectors":".aids2022-popup, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"medium","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center top","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":false,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":24856,"slug":"aids-2022-satellite-session"},"pum-24233":{"triggers":[{"type":"click_open","settings":{"cookie_name":["pum-24233"],"extra_selectors":".3rdparty-popup, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"912","size":"medium","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center top","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":false,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"default-theme","id":24233,"slug":"3rd-party-events"},"pum-24212":{"triggers":[{"type":"click_open","settings":{"cookie_name":["pum-24212"],"extra_selectors":".iwd2022-popup, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"912","size":"medium","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center top","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":false,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"default-theme","id":24212,"slug":"iwd-2022"},"pum-24217":{"triggers":[{"type":"click_open","settings":{"cookie_name":["pum-24217"],"extra_selectors":".m2m-day-tea, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"912","size":"medium","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center top","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":false,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"default-theme","id":24217,"slug":"mothers2mothers-day-tea"},"pum-24230":{"triggers":[{"type":"click_open","settings":{"cookie_name":["pum-24230"],"extra_selectors":".m4mm-popup, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"912","size":"medium","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center top","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":false,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"default-theme","id":24230,"slug":"minutes-for-mentor-mothers-uganda"},"pum-24232":{"triggers":[{"type":"click_open","settings":{"cookie_name":["pum-24232"],"extra_selectors":".carols2022-popup, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"912","size":"medium","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center top","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":false,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"default-theme","id":24232,"slug":"carols-2022"},"pum-22620":{"triggers":[{"type":"click_open","settings":{"cookie_name":"","extra_selectors":".carols2021-popup, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"912","size":"medium","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center top","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":false,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"default-theme","id":22620,"slug":"carols-by-candlelight-2021"},"pum-2042":{"triggers":[{"type":"click_open","settings":{"cookie_name":"","extra_selectors":".what-we-do-adolescentpopup, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"tiny","responsive_min_width":"35%","responsive_max_width":"100%","custom_width":"35%","custom_height_auto":true,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center top","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":true,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":2042,"slug":"adolescent-what-we-do"},"pum-2040":{"triggers":[{"type":"click_open","settings":{"cookie_name":"","extra_selectors":".what-we-do-childrenpopup, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"tiny","responsive_min_width":"35%","responsive_max_width":"100%","custom_width":"35%","custom_height_auto":true,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center top","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":true,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":2040,"slug":"children-what-we-do"},"pum-14803":{"triggers":[{"type":"click_open","settings":{"cookie_name":"","extra_selectors":".majorgifts-popup, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"small","responsive_min_width":"%","responsive_max_width":"100%","custom_width":"35%","custom_height_auto":true,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center top","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":true,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":14803,"slug":"major-gifts-popup"},"pum-14828":{"triggers":[{"type":"click_open","settings":{"cookie_name":"","extra_selectors":".donoradvisedfunds-popup, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"small","responsive_min_width":"%","responsive_max_width":"100%","custom_width":"35%","custom_height_auto":true,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center top","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":true,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":14828,"slug":"donor-advised-funds-popup"},"pum-14837":{"triggers":[{"type":"click_open","settings":{"cookie_name":"","extra_selectors":".stocks-or-shares-popup, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"small","responsive_min_width":"%","responsive_max_width":"100%","custom_width":"35%","custom_height_auto":true,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center top","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":true,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":14837,"slug":"stocks-or-shares-popup"},"pum-14845":{"triggers":[{"type":"click_open","settings":{"cookie_name":"","extra_selectors":".myire-popup, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"small","responsive_min_width":"%","responsive_max_width":"100%","custom_width":"35%","custom_height_auto":true,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center top","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":true,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":14845,"slug":"make-your-impact-reach-even-further-popup"},"pum-14842":{"triggers":[{"type":"click_open","settings":{"cookie_name":"","extra_selectors":".legacy-society-popup, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"small","responsive_min_width":"%","responsive_max_width":"100%","custom_width":"35%","custom_height_auto":true,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center top","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":true,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":14842,"slug":"legacy-society-popup"},"pum-14776":{"triggers":[{"type":"click_open","settings":{"cookie_name":"","extra_selectors":".cyclezerot-popup, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"tiny","responsive_min_width":"35%","responsive_max_width":"100%","custom_width":"35%","custom_height_auto":true,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center top","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":true,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":14776,"slug":"cycle2zero-popup"},"pum-1773":{"triggers":[{"type":"click_open","settings":{"cookie_name":"","extra_selectors":".send-a-chequepopup, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"small","responsive_min_width":"%","responsive_max_width":"100%","custom_width":"35%","custom_height_auto":true,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center top","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":true,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":1773,"slug":"send-a-cheque-popup"},"pum-1463":{"triggers":[{"type":"click_open","settings":{"cookie_name":"","extra_selectors":".join-our-eventspopup, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":true,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"small","responsive_min_width":"%","responsive_max_width":"100%","custom_width":"35%","custom_height_auto":true,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center top","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":true,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":1463,"slug":"sign-up-pop-up"},"pum-16472":{"triggers":[{"type":"click_open","settings":{"cookie_name":"","extra_selectors":".meet-relebohile, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"small","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":0,"close_on_overlay_click":true,"close_on_esc_press":true,"close_on_f4_press":true,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":16472,"slug":"meet-relebohile"},"pum-16454":{"triggers":[{"type":"click_open","settings":{"cookie_name":"","extra_selectors":".meet-wilbroda, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"small","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":0,"close_on_overlay_click":true,"close_on_esc_press":true,"close_on_f4_press":true,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":16454,"slug":"meet-wilbroda"},"pum-16507":{"triggers":[{"type":"click_open","settings":{"cookie_name":"","extra_selectors":".meet-gillian, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"small","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":0,"close_on_overlay_click":true,"close_on_esc_press":true,"close_on_f4_press":true,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":16507,"slug":"meet-gillian"},"pum-16510":{"triggers":[{"type":"click_open","settings":{"extra_selectors":".meet-kathrin, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"small","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":0,"close_on_overlay_click":true,"close_on_esc_press":true,"close_on_f4_press":true,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":16510,"slug":"meet-kathrin"},"pum-16504":{"triggers":[{"type":"click_open","settings":{"extra_selectors":".meet-chad, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"small","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":0,"close_on_overlay_click":true,"close_on_esc_press":true,"close_on_f4_press":true,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":16504,"slug":"meet-chad"},"pum-16502":{"triggers":[{"type":"click_open","settings":{"extra_selectors":".meet-frank, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"small","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":0,"close_on_overlay_click":true,"close_on_esc_press":true,"close_on_f4_press":true,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":16502,"slug":"meet-frank"},"pum-16469":{"triggers":[{"type":"click_open","settings":{"cookie_name":"","extra_selectors":".meet-teddy, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"small","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":0,"close_on_overlay_click":true,"close_on_esc_press":true,"close_on_f4_press":true,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":16469,"slug":"meet-teddy"},"pum-16474":{"triggers":[{"type":"click_open","settings":{"cookie_name":"","extra_selectors":".meet-velna, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"small","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":0,"close_on_overlay_click":true,"close_on_esc_press":true,"close_on_f4_press":true,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":16474,"slug":"meet-velna"},"pum-16477":{"triggers":[{"type":"click_open","settings":{"cookie_name":"","extra_selectors":".meet-colile, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"small","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":0,"close_on_overlay_click":true,"close_on_esc_press":true,"close_on_f4_press":true,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":16477,"slug":"meet-colile"},"pum-16480":{"triggers":[{"type":"click_open","settings":{"cookie_name":"","extra_selectors":".meet-cissy, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"small","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":0,"close_on_overlay_click":true,"close_on_esc_press":true,"close_on_f4_press":true,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":16480,"slug":"meet-cissy"},"pum-16482":{"triggers":[{"type":"click_open","settings":{"cookie_name":"","extra_selectors":".meet-limpho, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"small","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":0,"close_on_overlay_click":true,"close_on_esc_press":true,"close_on_f4_press":true,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":16482,"slug":"meet-limpho"},"pum-920":{"triggers":[{"type":"click_open","settings":{"cookie_name":"","extra_selectors":".what-we-do-womenpopup, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"tiny","responsive_min_width":"35%","responsive_max_width":"100%","custom_width":"35%","custom_height_auto":true,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center top","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":0,"close_on_overlay_click":true,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":920,"slug":"women-what-we-do"},"pum-15353":{"triggers":[{"type":"click_open","settings":{"cookie_name":"","extra_selectors":".donate-popup, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"small","responsive_min_width":"%","responsive_max_width":"100%","custom_width":"35%","custom_height_auto":true,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center top","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":0,"close_on_overlay_click":true,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":15353,"slug":"donate-popup"},"pum-14789":{"triggers":[{"type":"click_open","settings":{"cookie_name":"","extra_selectors":".immersive-experience-popup, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"tiny","responsive_min_width":"35%","responsive_max_width":"100%","custom_width":"35%","custom_height_auto":true,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center top","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":0,"close_on_overlay_click":true,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":14789,"slug":"immersive-experience-popup"},"pum-14742":{"triggers":[{"type":"click_open","settings":{"cookie_name":"","extra_selectors":".corporate-advisory-development-committee-drinks-popup, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"tiny","responsive_min_width":"35%","responsive_max_width":"100%","custom_width":"35%","custom_height_auto":true,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center top","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":0,"close_on_overlay_click":true,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":14742,"slug":"corporate-advisory-development-committee-drinks-popup"},"pum-14783":{"triggers":[{"type":"click_open","settings":{"extra_selectors":".impact-road-show-roundtable-popup, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"tiny","responsive_min_width":"35%","responsive_max_width":"100%","custom_width":"35%","custom_height_auto":true,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center top","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":0,"close_on_overlay_click":true,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":14783,"slug":"impact-road-show-roundtable-popup"},"pum-14770":{"triggers":[{"type":"click_open","settings":{"extra_selectors":".carols-candlelight-popup, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"tiny","responsive_min_width":"35%","responsive_max_width":"100%","custom_width":"35%","custom_height_auto":true,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center top","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":0,"close_on_overlay_click":true,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":14770,"slug":"carols-by-candlelight-popup"},"pum-14766":{"triggers":[{"type":"click_open","settings":{"extra_selectors":".winter-fundraiser-popup, a[href=\"exact_url\"]"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"918","size":"tiny","responsive_min_width":"35%","responsive_max_width":"100%","custom_width":"35%","custom_height_auto":true,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center top","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":0,"close_on_overlay_click":true,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"m2m-popup","id":14766,"slug":"the-winter-fundraiser-popup"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://m2m.org/wp-content/plugins/popup-maker/assets/js/site.min.js?defer&#038;ver=1.16.7' id='popup-maker-site-js'></script>
+<script type='text/javascript' src='https://m2m.org/wp-content/plugins/popup-maker/assets/js/vendor/mobile-detect.min.js?ver=1.3.3' id='mobile-detect-js'></script>
+<script type='text/javascript' defer='defer' src='https://m2m.org/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.6.4' id='gform_placeholder-js'></script>
+<script type='text/javascript' src='https://m2m.org/wp-content/plugins/total-theme-core/inc/wpbakery/assets/js/vcex-front.min.js?ver=1.0.4' id='vcex-front-js'></script>
+<script type='text/javascript' src='https://m2m.org/wp-content/plugins/js_composer/assets/lib/bower/skrollr/dist/skrollr.min.js?ver=6.0.5' id='vc_jquery_skrollr_js-js'></script>
+<script type='text/javascript' src='https://m2m.org/wp-content/plugins/rotatingtweets/js/jquery.cycle.all.min.js?ver=6.0.1' id='jquery-cycle-js'></script>
+<script type='text/javascript' src='https://m2m.org/wp-content/plugins/rotatingtweets/js/rotating_tweet.js?ver=1.9.10' id='rotating_tweet-js'></script>
+<script type='text/javascript' src='https://m2m.org/wp-content/plugins/total-theme-core/inc/wpbakery/assets/js/lib/wpex.owl.carousel.min.js?ver=1.0' id='wpex-carousel-js'></script>
+<script type='text/javascript' src='https://m2m.org/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+
+	<script>
+
+		( function( $ ) {
+
+			'use strict';
+
+			$( document ).ready( function() {
+
+				// change "open-vc-row-pricing" to be the class used in the module you want to click to open the hidden row
+				var $trigger = $( '.open-vc-row-tab' );
+
+				// change "vc-row-pricing" to be the class used in the hidden row
+				var $hiddenRow = $( '.vc-row-tab' );
+
+				if ( $hiddenRow.length ) {
+					$trigger.click( function() {
+						$hiddenRow.toggle();
+						return false;
+					} );
+				}
+
+			} );
+
+		} ( jQuery ) );
+
+	</script>
+
+<script type="text/javascript">
+gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 6) {if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } );
+</script>
+<script type="text/javascript">
+gform.initializeOnLoaded( function() { jQuery(document).trigger('gform_post_render', [6, 1]) } );
+</script>
+<script type="text/javascript">
+gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 7) {if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } );
+</script>
+<script type="text/javascript">
+gform.initializeOnLoaded( function() { jQuery(document).trigger('gform_post_render', [7, 1]) } );
+</script>
+
+		<!-- Cookie Notice plugin v2.2.3 by Hu-manity.co https://hu-manity.co/ -->
+		<div id="cookie-notice" role="dialog" class="cookie-notice-hidden cookie-revoke-hidden cn-position-bottom" aria-label="Cookie Notice" style="background-color: rgba(79,76,151,1);"><div class="cookie-notice-container" style="color: #fff;"><span id="cn-notice-text" class="cn-text-container">We use cookies to ensure that we give you the best experience on our website. Please click "ok" if you are happy with this.</span><span id="cn-notice-buttons" class="cn-buttons-container"><a href="#" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button cn-button-custom cookie-button" aria-label="Ok">Ok</a></span><span id="cn-close-notice" data-cookie-set="accept" class="cn-close-icon" title="No"></span></div>
+			
+		</div>
+		<!-- / Cookie Notice plugin -->
+<script>(function(){var js = "window['__CF$cv$params']={r:'7336773899e085ad',m:'04cPH9PMwzfoERFVN3fQPPgFoZvp.4CGNe1_c6pDhrI-1659271890-0-AcmTKyvkAD8TQPE5xkp9fE+IiidIHXqzJsPSCAEfmSKAl6LeFcBVk3i0vTAT+Sc/hnP8yodxqAgQApcJg87m8c7DaS8YaOwofaNvQRtPb2EHUNBngT/XYKAyg7R8+iqzrw==',s:[0xd7820612dd,0x9588299285],u:'/cdn-cgi/challenge-platform/h/g'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/g/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+</html>
 </html>
